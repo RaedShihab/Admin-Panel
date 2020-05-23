@@ -72,44 +72,44 @@ class App extends React.Component {
                         }
                         <Router history={history}>
                             <div>
-                                <PrivateRoute exact path="/" component={HomePage} />
-                                <PrivateRoute exact path="/dashboard" component={HomePage} />
+                                <Route exact path="/" component={HomePage} />
+                                <Route exact path="/dashboard" component={HomePage} />
 
-                                <PrivateRoute exact path="/users" component={UserTable} />
-                                <PrivateRoute exact path="/users/add-user" component={Adduser} />
-                                <PrivateRoute exact path="/users/update/:id" component={UserUpdate} />
+                                <Route exact path="/users" component={UserTable} />
+                                <Route exact path="/users/add-user" component={Adduser} />
+                                <Route exact path="/users/update/:id" component={UserUpdate} />
                                 
-                                <PrivateRoute exact path="/posts/add-post" component={AddPost} />
-                                <PrivateRoute exact path="/posts/update/:id" component={updatePost} />
-                                <PrivateRoute exact path="/posts" component={PosteTable} />
+                                <Route exact path="/posts/add-post" component={AddPost} />
+                                <Route exact path="/posts/update/:id" component={updatePost} />
+                                <Route exact path="/posts" component={PosteTable} />
 
-                                <PrivateRoute exact path="/countries/create" component={AddCountry} />
-                                <PrivateRoute exact path="/countries/edit/:id" component={UpdateCountry} />
-                                <PrivateRoute exact path="/countries" component={CountriesTable} />
+                                <Route exact path="/countries/create" component={AddCountry} />
+                                <Route exact path="/countries/edit/:id" component={UpdateCountry} />
+                                <Route exact path="/countries" component={CountriesTable} />
 
-                                <PrivateRoute exact path="/cities/create" component={AddCity} />
-                                <PrivateRoute exact path="/cities/edit/:id" component={UpdateCity} />
-                                <PrivateRoute exact path="/cities" component={CitiesList} />
+                                <Route exact path="/cities/create" component={AddCity} />
+                                <Route exact path="/cities/edit/:id" component={UpdateCity} />
+                                <Route exact path="/cities" component={CitiesList} />
 
-                                <PrivateRoute exact path="/districts/create" component={AddDistric} />
-                                <PrivateRoute exact path="/districts/district/:id" component={UpdateDistrict} />
-                                <PrivateRoute exact path="/districts" component={DistrictsList} />
+                                <Route exact path="/districts/create" component={AddDistric} />
+                                <Route exact path="/districts/district/:id" component={UpdateDistrict} />
+                                <Route exact path="/districts" component={DistrictsList} />
 
                                 <Route exact path="/categories/create" component={AddCategory} />
                                 <Route exact path="/categories/category/:id" component={updateCategory} />    
                                 <Route exact path="/categories" component={CategoriesList} />
 
-                                <PrivateRoute exact path="/brands/create" component={AddBrand} />
-                                <PrivateRoute exact path="/brands/brand/:id" component={updateBrand} />    
-                                <PrivateRoute exact path="/brands" component={brandList} />
+                                <Route exact path="/brands/create" component={AddBrand} />
+                                <Route exact path="/brands/brand/:id" component={updateBrand} />    
+                                <Route exact path="/brands" component={brandList} />
 
-                                <PrivateRoute exact path="/models/create" component={AddModel} />
-                                <PrivateRoute exact path="/models/model/:id" component={updateModel} />    
-                                <PrivateRoute exact path="/models" component={ModeslList} />
+                                <Route exact path="/models/create" component={AddModel} />
+                                <Route exact path="/models/model/:id" component={updateModel} />    
+                                <Route exact path="/models" component={ModeslList} />
 
-                                <PrivateRoute exact path="/packages/create" component={AddPackage} />
-                                <PrivateRoute exact path="/packages/package/:id" component={updatePackage} />    
-                                <PrivateRoute exact path="/packages" component={PakcagesList} />
+                                <Route exact path="/packages/create" component={AddPackage} />
+                                <Route exact path="/packages/package/:id" component={updatePackage} />    
+                                <Route exact path="/packages" component={PakcagesList} />
 
                                 <Route path="/login" component={LoginPage} />
                             </div>

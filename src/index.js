@@ -13,8 +13,8 @@ import * as serviceWorker from './serviceWorker';
 import { configureFakeBackend } from './auth/Helpers/fakeBackend';
 configureFakeBackend();
 
-// ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
-ReactDOM.render(<I18nextProvider i18n={i18n}><Provider store={store}><App /></Provider></I18nextProvider>, document.getElementById('root'));
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
+// ReactDOM.render(<I18nextProvider i18n={i18n}><Provider store={store}><App /></Provider></I18nextProvider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
